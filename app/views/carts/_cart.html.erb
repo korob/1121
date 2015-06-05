@@ -3,8 +3,8 @@
 	<%= render(cart.line_items) %>
 	<tr class="total_line">
 		<td colspan="2">Итого</td>
-		<td class="total_cell"><%= number_to_currency(cart.total_price) %></td>
+		<td class="total_cell"><%= cart.total_price %> руб.</td>
 	</tr>
 </table>
 <%= button_to 'Оформить', new_order_path, method: :get %>
-<%= button_to 'Отчистить Корзину', cart, method: :delete %>
+<%= button_to 'Очистить Корзину', cart, method: :delete %>

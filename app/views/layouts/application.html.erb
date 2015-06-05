@@ -10,10 +10,24 @@
 </head>
 <body class='<%= controller.controller_name %>'>
 	<div id="banner">
-		<%= image_tag("logo.png") %>
-		<p> Суши кэт. </p>
-		<p> График работы: каждый день с 09:00 до 00:00.</p>
-		<p> Наш адрес: г. Казань, ул. Симонова, 14.</p>
+		<table>
+		<tr>
+			<td rowspan="2"><%= image_tag("logo.png") %></td>
+			<td rowspan="2"><h1>Суши Кэт</h1></td>
+		</tr>
+		<tr>
+			<td>
+				<div id="info">
+					<div id="top"><p> График работы: </p> 
+					<p id="name">каждый день с 09:00 до 00:00</p></div>
+					<br>
+					<div id="netop"><p> Наш адрес: </p> 
+					<p id="name">г. Казань, ул. Симонова, 14</p></div>
+				</div>
+			</td>
+		</tr>
+			
+		</table>
 	</div>
 	<div id="columns">
 		<div id="side">
@@ -24,13 +38,14 @@
 					<% end %>
 				<% end %>
 			</div>
+			<p id="menu">Меню<p>
 			<ul>
-				<li><%= link_to "Жареные Роллы", controller: 'hotrolls' %></li>
-				<li><%= link_to "Запеченные Роллы", controller: 'zaprolls'%></li>
-				<li><%= link_to "Фирменные Роллы", controller: 'firmrolls' %></li>
-				<li><%= link_to "Классические Роллы", controller: 'clasrolls'%></li>
+				<li><%= link_to "Жареные роллы", controller: 'hotrolls' %></li>
+				<li><%= link_to "Запеченные роллы", controller: 'zaprolls'%></li>
+				<li><%= link_to "Фирменные роллы", controller: 'firmrolls' %></li>
+				<li><%= link_to "Классические роллы", controller: 'clasrolls'%></li>
 				<li><%= link_to "Ассорти", controller: 'asss'%></li>
-				<li><%= link_to "Дополнительно к Роллам", controller: 'dopkrolls'%></li>
+				<li><%= link_to "Дополнительно к роллам", controller: 'dopkrolls'%></li>
 				<li><%= link_to "Суши", controller: 'sushis'%></li>
 				<li><%= link_to "Холодные закуски", controller: 'coldrolls'%></li>
 				<li><%= link_to "Салаты", controller: 'salats'%></li>
