@@ -101306,3 +101306,943 @@ Processing by HotrollsController#index as HTML
   Rendered collection (0.0ms)
   Rendered carts/_cart.html.erb (6.6ms)
 Completed 200 OK in 772ms (Views: 767.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hotrolls/index" for 127.0.0.1 at 2015-06-05 23:22:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HotrollsController#index as HTML
+  [1m[35mCart Load (1.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 66]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products"  WHERE (categor = 'Hot roll')[0m
+  Rendered hotrolls/index.html.erb within layouts/application (37.6ms)
+  [1m[35mLineItem Exists (1.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 66]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 66]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (8.4ms)
+Completed 200 OK in 1523ms (Views: 1440.8ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:50 +0300
+
+
+Started GET "/assets/asss.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:50 +0300
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:50 +0300
+
+
+Started GET "/assets/coldrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:50 +0300
+
+
+Started GET "/assets/clasrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:50 +0300
+
+
+Started GET "/assets/deserts.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:50 +0300
+
+
+Started GET "/assets/dopkrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:50 +0300
+
+
+Started GET "/assets/exels.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/firmrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/hotrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/naps.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/salats.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/sushis.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/zaprolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/asss.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/clasrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/coldrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/deserts.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/dopkrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/exels.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/firmrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/hotrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/naps.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:51 +0300
+
+
+Started GET "/assets/salats.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:52 +0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:52 +0300
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:52 +0300
+
+
+Started GET "/assets/sushis.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:52 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:52 +0300
+
+
+Started GET "/assets/zaprolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:52 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 23:22:52 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 23:22:52 +0300
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2015-06-05 23:22:52 +0300
+
+
+Started GET "/hotrolls/index" for 127.0.0.1 at 2015-06-05 23:23:03 +0300
+Processing by HotrollsController#index as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 66]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products"  WHERE (categor = 'Hot roll')[0m
+  Rendered hotrolls/index.html.erb within layouts/application (9.4ms)
+  [1m[35mLineItem Exists (1.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 66]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 66]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (6.0ms)
+Completed 200 OK in 918ms (Views: 912.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/hotrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/asss.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/clasrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/coldrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/deserts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/dopkrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:04 +0300
+
+
+Started GET "/assets/exels.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/firmrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/hotrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/naps.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/salats.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/sushis.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/zaprolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2015-06-05 23:23:05 +0300
+
+
+Started GET "/hotrolls/index" for 127.0.0.1 at 2015-06-05 23:23:18 +0300
+Processing by HotrollsController#index as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 66]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products"  WHERE (categor = 'Hot roll')[0m
+  Rendered hotrolls/index.html.erb within layouts/application (9.6ms)
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 66]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 66]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (5.8ms)
+Completed 200 OK in 924ms (Views: 917.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/clasrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/asss.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/coldrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/deserts.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/dopkrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/exels.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/firmrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/hotrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/naps.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/salats.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:19 +0300
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/sushis.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/zaprolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/asss.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/clasrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/coldrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/deserts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/dopkrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/exels.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/firmrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/hotrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/naps.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/salats.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/sushis.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/zaprolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2015-06-05 23:23:20 +0300
+
+
+Started GET "/hotrolls/index" for 127.0.0.1 at 2015-06-05 23:23:32 +0300
+Processing by HotrollsController#index as HTML
+  [1m[35mCart Load (1.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 66]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products"  WHERE (categor = 'Hot roll')[0m
+  Rendered hotrolls/index.html.erb within layouts/application (15.0ms)
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 66]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 66]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (5.0ms)
+Completed 200 OK in 918ms (Views: 912.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/deserts.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/asss.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/clasrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/coldrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/dopkrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/exels.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/firmrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/hotrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/naps.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/salats.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:33 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/sushis.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/zaprolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/asss.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/clasrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/coldrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/deserts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/dopkrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/exels.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/firmrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/hotrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/naps.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/salats.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/sushis.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/zaprolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2015-06-05 23:23:34 +0300
+
+
+Started GET "/hotrolls/index" for 127.0.0.1 at 2015-06-05 23:23:40 +0300
+Processing by HotrollsController#index as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 66]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products"  WHERE (categor = 'Hot roll')[0m
+  Rendered hotrolls/index.html.erb within layouts/application (9.0ms)
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 66]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 66]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (5.8ms)
+Completed 200 OK in 955ms (Views: 950.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/asss.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/deserts.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/coldrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/clasrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/dopkrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/exels.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/firmrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/hotrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/naps.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/salats.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/sushis.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/zaprolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:41 +0300
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/asss.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/clasrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/coldrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/deserts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/dopkrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/exels.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/firmrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/hotrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/naps.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/salats.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/sushis.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/zaprolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2015-06-05 23:23:42 +0300
+
+
+Started GET "/hotrolls/index" for 127.0.0.1 at 2015-06-05 23:23:49 +0300
+Processing by HotrollsController#index as HTML
+  [1m[35mCart Load (1.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 66]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products"  WHERE (categor = 'Hot roll')[0m
+  Rendered hotrolls/index.html.erb within layouts/application (9.8ms)
+  [1m[35mLineItem Exists (1.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 66]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 66]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (6.7ms)
+Completed 200 OK in 919ms (Views: 912.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:50 +0300
+
+
+Started GET "/assets/deserts.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:50 +0300
+
+
+Started GET "/assets/clasrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/coldrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/asss.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/dopkrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/exels.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/firmrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/hotrolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/naps.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/salats.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/sushis.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/zaprolls.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/asss.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/clasrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/coldrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/deserts.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/dopkrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/exels.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/firmrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/hotrolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/naps.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/salats.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:51 +0300
+
+
+Started GET "/assets/sushis.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:52 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:52 +0300
+
+
+Started GET "/assets/zaprolls.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:52 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 23:23:52 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 23:23:52 +0300
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2015-06-05 23:23:52 +0300
