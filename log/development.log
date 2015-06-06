@@ -102246,3 +102246,680 @@ Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 23:23:52 +0300
 
 
 Started GET "/assets/1.jpg" for 127.0.0.1 at 2015-06-05 23:23:52 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-06 21:03:40 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HotrollsController#index as HTML
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-06-06 18:03:40.865274"], ["updated_at", "2015-06-06 18:03:40.865274"]]
+  [1m[35m (104.2ms)[0m  commit transaction
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products"  WHERE (categor = 'Hot roll')[0m
+  Rendered hotrolls/index.html.erb within layouts/application (39.0ms)
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (9.0ms)
+Completed 200 OK in 1567ms (Views: 1377.5ms | ActiveRecord: 110.1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/asss.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/clasrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/coldrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/deserts.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/dopkrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/exels.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/firmrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/hotrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/naps.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/salats.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/sushis.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:42 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/zaprolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/asss.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/clasrolls.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/coldrolls.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/deserts.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/dopkrolls.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/exels.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/firmrolls.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/hotrolls.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/naps.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/salats.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/sushis.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/zaprolls.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2015-06-06 21:03:43 +0300
+
+
+Started POST "/line_items?product_id=21" for 127.0.0.1 at 2015-06-06 21:05:11 +0300
+Processing by LineItemsController#create as JS
+  Parameters: {"authenticity_token"=>"rSvnOufOVCb76gK+wGLytoKA77tpNM1uFxNM/M9Fk6g=", "product_id"=>"21"}
+  [1m[35mCart Load (1.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT  "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ? AND "line_items"."product_id" = 21 LIMIT 1  [["cart_id", 67]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES (?, ?, ?, ?)  [["cart_id", 67], ["created_at", "2015-06-06 18:05:11.606611"], ["product_id", 21], ["updated_at", "2015-06-06 18:05:11.606611"]]
+  [1m[36m (106.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mLineItem Load (1.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (9.8ms)
+  Rendered carts/_cart.html.erb (20.8ms)
+  Rendered line_items/create.js.erb (26.8ms)
+Completed 200 OK in 248ms (Views: 35.8ms | ActiveRecord: 110.4ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:05:14 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (152.3ms)
+  Rendered orders/new.html.erb within layouts/application (156.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (5.0ms)
+  Rendered carts/_cart.html.erb (14.4ms)
+Completed 200 OK in 1225ms (Views: 1204.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:06:01 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (4.6ms)
+  Rendered carts/_cart.html.erb (12.6ms)
+Completed 200 OK in 772ms (Views: 761.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:06:25 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (2.1ms)
+  Rendered carts/_cart.html.erb (9.1ms)
+Completed 200 OK in 893ms (Views: 884.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:06:28 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (1.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (2.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.0ms)
+  Rendered carts/_cart.html.erb (9.0ms)
+Completed 200 OK in 770ms (Views: 760.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:07:17 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (1.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.0ms)
+  Rendered carts/_cart.html.erb (11.0ms)
+Completed 200 OK in 929ms (Views: 918.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:07:28 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (2.0ms)
+  Rendered orders/new.html.erb within layouts/application (5.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (1.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (4.5ms)
+  Rendered carts/_cart.html.erb (12.5ms)
+Completed 200 OK in 890ms (Views: 878.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:07:56 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (1.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (1.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (4.0ms)
+  Rendered carts/_cart.html.erb (11.0ms)
+Completed 200 OK in 897ms (Views: 887.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:08:09 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (1.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (2.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.0ms)
+  Rendered carts/_cart.html.erb (10.2ms)
+Completed 200 OK in 760ms (Views: 750.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:09:25 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (1.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (1.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.0ms)
+  Rendered carts/_cart.html.erb (10.0ms)
+Completed 200 OK in 991ms (Views: 980.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:09:38 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (4.0ms)
+  Rendered carts/_cart.html.erb (13.0ms)
+Completed 200 OK in 780ms (Views: 772.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:09:51 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 102ms
+
+ActionView::Template::Error (Invalid CSS after "	color": expected "{", was ";#c34b1c;"
+  (in C:/Sites/work/depot/app/assets/stylesheets/orders.css.scss:6)):
+    4:   <title>Суши Кэт</title>
+    5:   <meta name="description" content="Суши Кэт. Бесплатная доставка Суши. Казань.">
+    6:   <meta name="keywords" content="доставка, бесплатно, суши, роллы, казань, суши-кэт">
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9:   <%= csrf_meta_tags %>
+   10: </head>
+  app/assets/stylesheets/orders.css.scss:6
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__290642094_46745844'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.6ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:10:23 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (1.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (4.0ms)
+  Rendered carts/_cart.html.erb (12.0ms)
+Completed 200 OK in 903ms (Views: 893.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:11:06 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (1.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (5.0ms)
+  Rendered carts/_cart.html.erb (11.6ms)
+Completed 200 OK in 895ms (Views: 885.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:11:19 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (2.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (2.7ms)
+  Rendered carts/_cart.html.erb (9.7ms)
+Completed 200 OK in 898ms (Views: 888.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:12:18 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (2.0ms)
+  Rendered carts/_cart.html.erb (9.1ms)
+Completed 200 OK in 954ms (Views: 945.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:12:50 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (1.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.5ms)
+  Rendered carts/_cart.html.erb (12.5ms)
+Completed 200 OK in 996ms (Views: 987.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:14:45 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (1.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (4.0ms)
+  Rendered orders/new.html.erb within layouts/application (8.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (1.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.7ms)
+  Rendered carts/_cart.html.erb (12.5ms)
+Completed 200 OK in 913ms (Views: 902.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:14:58 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (5.0ms)
+  Rendered orders/new.html.erb within layouts/application (11.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (1.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.0ms)
+  Rendered carts/_cart.html.erb (11.0ms)
+Completed 200 OK in 913ms (Views: 901.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:15:02 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (2.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (5.0ms)
+  Rendered carts/_cart.html.erb (11.0ms)
+Completed 200 OK in 811ms (Views: 801.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:15:13 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (4.0ms)
+  Rendered orders/new.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (1.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.1ms)
+  Rendered carts/_cart.html.erb (11.4ms)
+Completed 200 OK in 776ms (Views: 766.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:15:23 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (4.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (4.2ms)
+  Rendered carts/_cart.html.erb (12.2ms)
+Completed 200 OK in 777ms (Views: 767.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:15:43 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (4.0ms)
+  Rendered orders/new.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (1.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (1.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.8ms)
+  Rendered carts/_cart.html.erb (13.0ms)
+Completed 200 OK in 783ms (Views: 770.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:16:25 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Exists (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  [1m[35mLineItem Load (1.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (4.0ms)
+  Rendered carts/_cart.html.erb (12.8ms)
+Completed 200 OK in 796ms (Views: 785.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-06-06 21:16:58 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (1.0ms)[0m  SELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1  [["id", 67]]
+  [1m[36mLineItem Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 67]]
+  Rendered orders/_form.html.erb (3.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 67]]
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.html.erb (3.0ms)
+  Rendered carts/_cart.html.erb (12.1ms)
+Completed 200 OK in 820ms (Views: 810.4ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2015-06-06 21:17:06 +0300
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rSvnOufOVCb76gK+wGLytoKA77tpNM1uFxNM/M9Fk6g=", "order"=>{"name"=>"erwer", "number"=>"uhu"}, "commit"=>"Create Order"}
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 67]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "orders" ("created_at", "name", "number", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-06-06 18:17:06.534198"], ["name", "erwer"], ["number", "uhu"], ["updated_at", "2015-06-06 18:17:06.534198"]]
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "line_items" SET "cart_id" = ?, "order_id" = ?, "updated_at" = ? WHERE "line_items"."id" = 78[0m  [["cart_id", nil], ["order_id", 18], ["updated_at", "2015-06-06 18:17:06.540184"]]
+  [1m[35m (143.6ms)[0m  commit transaction
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mLineItem Load (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 67]]
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM "carts" WHERE "carts"."id" = ?  [["id", 67]]
+  [1m[36m (84.9ms)[0m  [1mcommit transaction[0m
+  Rendered order_notifier/shipped.html.erb (1.0ms)
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered line_items/_line_item.text.erb (4.0ms)
+  Rendered orders/_order.text.erb (1.0ms)
+  Rendered order_notifier/shipped.text.erb (13.0ms)
+
+OrderNotifier#shipped: processed outbound mail in 885.9ms
+
+Sent mail to rstkorob1@gmail.com (490.7ms)
+Date: Sat, 06 Jun 2015 21:17:07 +0300
+From: from@example.com
+To: rstkorob1@gmail.com
+Message-ID: <55733923b3f0a_ad82f80c8064619@Samsung.mail>
+Subject: Shipped
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_55733923a8708_ad82f80c8064523";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_55733923a8708_ad82f80c8064523
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+0JfQsNC60LDQt9Cw0LvQuCDRgdC70LXQtNGD0Y7RidC40Lkg0YLQvtCy0LDR
+gDoKIDEgeCDQotC+0LLQsNGAMQoK0J3QvtC80LXRgCDQuCDQuNC80Y8gCtCY
+0LzRjwplcndlcgrQndC+0LzQtdGACnVodQo=
+
+----==_mimepart_55733923a8708_ad82f80c8064523
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>OrderNotifier#shipped</h1>
+
+<p>
+  , find me in app/views/order_notifier/shipped.html.erb
+</p>
+
+----==_mimepart_55733923a8708_ad82f80c8064523--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1671ms (ActiveRecord: 233.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-06 21:17:08 +0300
+Processing by HotrollsController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2015-06-06 18:17:08.228690"], ["updated_at", "2015-06-06 18:17:08.228690"]]
+  [1m[36m (134.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"  WHERE (categor = 'Hot roll')
+  Rendered hotrolls/index.html.erb within layouts/application (11.0ms)
+  [1m[36mLineItem Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 68]]
+  [1m[35mLineItem Load (0.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 68]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (5.0ms)
+Completed 200 OK in 949ms (Views: 801.6ms | ActiveRecord: 138.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-06 21:17:24 +0300
+Processing by HotrollsController#index as HTML
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT  "carts".* FROM "carts"  WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 68]]
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products"  WHERE (categor = 'Hot roll')
+  Rendered hotrolls/index.html.erb within layouts/application (7.0ms)
+  [1m[36mLineItem Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "line_items"  WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 68]]
+  [1m[35mLineItem Load (1.0ms)[0m  SELECT "line_items".* FROM "line_items"  WHERE "line_items"."cart_id" = ?  [["cart_id", 68]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (4.2ms)
+Completed 200 OK in 742ms (Views: 735.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/asss.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/clasrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/coldrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/deserts.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/dopkrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/exels.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/firmrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/hotrolls.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/naps.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/salats.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/sushis.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:25 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-06 21:17:26 +0300

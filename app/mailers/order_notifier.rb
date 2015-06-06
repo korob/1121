@@ -9,6 +9,6 @@ class OrderNotifier < ActionMailer::Base
   #
   def shipped(order)
     @order = order
-    mail to: "rstkorob1@gmail.com"
+    mail to: "sushicat16@yandex.ru"
   end
 end
