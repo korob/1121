@@ -23,14 +23,16 @@ body {
 	background: #171415;
 	padding: 10px;
 	text-align: left;
+	height: 150px;
 
 	table {
 		width: 100%;
 		border-spacing: 0;
 
+
 		#info {
 			margin-top: 10px;
-			margin-left: 35%;
+			margin-left: 20%;
 			#top {
 				float: left;
 			 	p {
@@ -45,7 +47,6 @@ body {
 			}
 			#netop {
 				float: left;
-				margin-left: 55px;
 				p {
 					display:inline;
 					font-size: 11pt;
@@ -61,9 +62,9 @@ body {
 
 	img {
 		float: left;
-		width: 117px;
-		height: 86px;
-		padding-top: 17px;
+		width: 100px;
+		height: 134px;
+		padding-top: 10px;
 		padding-left: 40px;
 	}
 	h1 {
@@ -72,7 +73,14 @@ body {
 		color: #f68721;
 	}
 
+	h2 {
+		padding-top: 15px;
+		font-size: 20pt;
+		color: #d3c7bb;
+	}
+
 }
+
 
 #notice {
 	color: #000 !important;
@@ -85,6 +93,10 @@ body {
 
 #columns {
 	background: #332C2F;
+	#columns1 {
+		position: fixed;
+		z-index: 100;
+	}
 
 	#main {
 		margin-left: 17em;
@@ -169,16 +181,16 @@ body {
 }
 
 #futer {
-	height: 100px;
+	height: 155px;
 	background-color: #171415;
 	position: relative;
 	clear:both;
 
 	img {
 		padding-top: 10px;
-		padding-left: 10px;
-		width: 117px;
-		height: 86px;
+		padding-left: 40px;
+		width: 100px;
+		height: 134px;
 		margin-left: 100px;
 		display: inline;
 	}

@@ -40,7 +40,6 @@ class OrdersController < ApplicationController
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
-        OrderNotifier.shipped(@order).deliver
         format.html { redirect_to hotrolls_url }
         format.json { render :show, status: :created, location: @order }
       else

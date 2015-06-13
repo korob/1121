@@ -3,7 +3,7 @@ class Product < ActiveRecord::Base
 
 	PRODUCT_TYPE = [ "Hot roll", "Zap roll", "Firm roll", 
 		"Clas roll", "Ass", "Dop k roll",
-		"Sushi", "Cold roll", "Salat", "Excl", "Nap", "Desert" ]
+		"Sushi", "Cold roll", "Salat", "Excl", "Nap", "Desert", "Pizza" ]
 
 
 

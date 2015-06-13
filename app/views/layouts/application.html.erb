@@ -7,6 +7,18 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src=http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js></script>
+
+  <script type="text/javascript">
+	$(function(){
+	$(window).scroll(function() {
+	var top = $(document).scrollTop();
+	if (top < 150) $("#columns1").css({top: '0', position: 'relative'});
+	else $("#columns1").css({top: '0', position: 'fixed'});
+	});
+	});
+</script>
+
 </head>
 <body class='<%= controller.controller_name %>'>
 	<div id="banner">
@@ -14,6 +26,7 @@
 		<tr>
 			<td rowspan="2"><%= image_tag("logo.png") %></td>
 			<td rowspan="2"><h1>Суши Кэт</h1></td>
+			<div id="numb"><td rowspan="2"><h2>203-3-003</h2></td></div>
 		</tr>
 		<tr>
 			<td>
@@ -22,14 +35,15 @@
 					<p id="name">каждый день с 09:00 до 00:00</p></div>
 					<br>
 					<div id="netop"><p> Наш адрес: </p> 
-					<p id="name">г. Казань, ул. Симонова, 14</p></div>
+					<p id="name">г. Казань, ул. Симонова, 14/41</p></div>
 				</div>
 			</td>
 		</tr>
 			
 		</table>
 	</div>
-	<div id="columns">
+	<div id="columns"> 
+		<div id="columns1">
 		<div id="side">
 			<div id="cart">
 				<% if @cart %>
@@ -44,6 +58,7 @@
 				<li><%= link_to "Запеченные роллы", controller: 'zaprolls'%></li>
 				<li><%= link_to "Фирменные роллы", controller: 'firmrolls' %></li>
 				<li><%= link_to "Классические роллы", controller: 'clasrolls'%></li>
+				<li><%= link_to "Пицца", controller: 'pizza'%></li>
 				<li><%= link_to "Ассорти", controller: 'asss'%></li>
 				<li><%= link_to "Дополнительно к роллам", controller: 'dopkrolls'%></li>
 				<li><%= link_to "Суши", controller: 'sushis'%></li>
@@ -64,18 +79,11 @@
 			<% end %>
 
 		</div>
+	</div>
 		<div id="main">
 			<%= yield %>
 		</div>
 	</div>
-	<div id="futer">
-		<footer>
-			<%= image_tag("logo.png") %>
-			<%= image_tag("logo.png") %>
-			<%= image_tag("logo.png") %>
-			<%= image_tag("logo.png") %>
-			<%= image_tag("logo.png") %>
-		</footer>
-	</div>
+
 </body>
 </html>
