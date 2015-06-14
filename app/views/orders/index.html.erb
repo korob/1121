@@ -1,4 +1,5 @@
-<h1>Listing orders</h1>
+<div id="orderid">
+<h1>Все заказы</h1>
 
 <table>
   <thead>
@@ -14,8 +15,6 @@
       <tr>
         <td><%= order.name %></td>
         <td><%= order.number %></td>
-        <td><%= link_to 'Показать', order %></td>
-        <td><%= link_to 'Изменить', edit_order_path(order) %></td>
         <td><%= link_to 'Удалить', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -25,3 +24,4 @@
 <br>
 
 <%= link_to 'Новый заказ', new_order_path %>
+</div>

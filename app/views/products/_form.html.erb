@@ -11,21 +11,22 @@
     </div>
   <% end %>
 
+  <div id="hello">
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label 'Заглавие' %><br>
     <%= f.text_field :title,  rows: 8 %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+    <%= f.label 'Описание' %><br>
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :image_url %><br>
+    <%= f.label 'Ссылка на картинку' %><br>
     <%= f.text_field :image_url %>
   </div>
   <div class="field">
-    <%= f.label :price %><br>
+    <%= f.label 'Цена' %><br>
     <%= f.text_field :price %>
   </div>
   <div class="field">
@@ -35,4 +36,6 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+
+</div>
 <% end %>
