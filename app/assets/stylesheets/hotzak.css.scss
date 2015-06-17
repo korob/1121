@@ -1,0 +1,58 @@
+.rolls h1 {
+	text-align: center;
+	color: #c34b1c;
+}
+.rolls table {
+	text-align: center;
+	border-spacing: 30px 30px;
+	tr {
+		td {
+			border-radius: 10px;
+			padding-bottom: 10px;
+			background-color: #171415;
+			width: 500px;
+			height: 200px;
+			h3 {
+				color: #e63704;
+			}
+			.price {
+				color: #e63704;
+			}
+			p {
+				color: #9d8977;
+			}
+			#but {
+				color: #9d8977;
+			}
+		}
+	}
+}
+
+	.entry {
+		overflow: auto;
+		min-height: 100px;
+
+		h3 {
+			font-size: 120%;
+			font-family: sans-serif;
+			color: #e63704;
+		}
+		img {
+			margin-top: 10px;
+			width: 275px;
+			heighr: 183px;
+		}
+
+		form, div {
+			display: inline;
+			margin-bottom: 10px;
+		}
+		div {
+			margin-bottom: 10px;
+		}
+		
+		.price {
+			color: #B74934;
+			font-weight: bold;
+		}
+	}

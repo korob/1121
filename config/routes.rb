@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
 Rails.application.routes.draw do
+  get 'hotzak/index'
+
   get 'pizza/index'
 
   get 'deserts/index'

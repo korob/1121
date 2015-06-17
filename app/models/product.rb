@@ -3,7 +3,7 @@ class Product < ActiveRecord::Base
 
 	PRODUCT_TYPE = [ "Hot roll", "Zap roll", "Firm roll", 
 		"Clas roll", "Ass", "Dop k roll",
-		"Sushi", "Cold roll", "Salat", "Excl", "Nap", "Desert", "Pizza" ]
+		"Sushi", "Cold roll", "Salat", "Excl", "Nap", "Desert", "Pizza", "Hot Zakus" ]
 
 
 
@@ -11,7 +11,7 @@ class Product < ActiveRecord::Base
 	has_many :line_items
 	has_many :order, through: :line_items
 
-	validates :title, :description, :image_url, :categor, presence: true
+	validates :title, :image_url, :categor, presence: true
 	validates :price, numericality: {greater_than_or_equal_to: 0.01}
 	validates :title, uniqueness: true
 	validates :image_url, allow_blank: true, format: {
