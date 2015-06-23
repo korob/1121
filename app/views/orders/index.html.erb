@@ -6,6 +6,7 @@
     <tr>
       <th>Имя</th>
       <th>Номер</th>
+      <th>Информация о заказе</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,6 +16,18 @@
       <tr>
         <td><%= order.name %></td>
         <td><%= order.number %></td>
+
+        <td><% x  = order.line_items %>
+            <% pr = Product.all %>
+            <% x.each do |kek| %>
+              <% prid = kek.product_id %>
+              <% pr.each do |prkek| %>
+                <%= prkek.title + ' x 'if prkek.id == prid %>
+                <%= kek.quantily if prkek.id == prid %>
+              <%end%>
+            <%end%>
+        </td>
+
         <td><%= link_to 'Удалить', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
